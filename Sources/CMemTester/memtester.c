@@ -85,7 +85,7 @@ void usage(char *me) {
     exit(EXIT_FAIL_NONSTARTER);
 }
 
-int test_ram_start(void *aligned, unsigned long bufsize, unsigned long loops) {
+int test_ram_start(void volatile *aligned, unsigned long bufsize, unsigned long loops) {
     ul loop, i;
     size_t halflen, count;
 

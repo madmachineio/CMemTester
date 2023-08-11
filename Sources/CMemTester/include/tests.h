@@ -15,7 +15,7 @@
  */
 
 /* Function declaration. */
-int test_ram_start(void *aligned, unsigned long bufsize, unsigned long loops);
+int test_ram_start(void volatile *aligned, unsigned long bufsize, unsigned long loops);
 int test_stuck_address(unsigned long volatile *bufa, size_t count);
 int test_random_value(unsigned long volatile *bufa, unsigned long volatile *bufb, size_t count);
 int test_xor_comparison(unsigned long volatile *bufa, unsigned long volatile *bufb, size_t count);
